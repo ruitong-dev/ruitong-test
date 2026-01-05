@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feline Friends - Cat Catalogue</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🐱 Feline Friends</h1>
+            <p class="tagline">Discover Your Perfect Cat Companion</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="filter-section">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search cats by breed or name...">
+                </div>
+                <div class="filter-tags">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="short-hair">Short Hair</button>
+                    <button class="filter-btn" data-filter="long-hair">Long Hair</button>
+                    <button class="filter-btn" data-filter="hypoallergenic">Hypoallergenic</button>
+                    <button class="filter-btn" data-filter="playful">Playful</button>
+                </div>
+            </div>
+
+            <div id="catalogue" class="catalogue-grid">
+                <!-- Cat cards will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Feline Friends. All cats deserve loving homes.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
